@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 33,33%;
+    width: 100%;
+    height: 85px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.menu_logo {
+    margin-left:175px;
+}
+
+a{
+    text-decoration: none;
+    color: #292929;
+}
+li {
+    display: inline; /* отображение списка в линию а не стобцом*/
+    margin-right: 72px;  /* у последнего отступ справа не нужен, поэтому можно нвписать li:not(:last-child) и он применит отступ ко всем кроме последнего ИЛИ через li+li*/
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px; /* а как я убрала точки напротив пунктов списка? короч это можно сделать св-м list-style:none*/
+    
+}
+
+/*
+.header-nav a {
+        transition: color 0.2s ease
+}            меняет цвет ссылки при наведениее медленнее и плавнее
+
+header-nav a:hover {
+    color: dfgfdg;
+}
+*/
+
+
+button {
+   margin-right: 200px;
+   margin-left: 35px;
+   width: 181px;
+   height: 51px;
+   background: #01996D;
+   border: 1px solid #01996D;
+   border-radius: 4px;
+   font-size: 20px;
+   line-height: 25px;
+   text-align: center;
+   color: #FFFFFF;
+
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.header {
+    width: 100%;
+    height: 895px;
+    margin: 0;
+    background-image: url(images/header.png);
+    
+}
+.slogan {
+    width: 540px;
+    height: 248px;
+    padding: 140px 130px 30px; /* можно задать отспуп вот так .slogan+* тогда он задаст этот стиль всему что будет под ним*/
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 90px;
+    color: #01996D;
+}
+.header_description {
+    width: 500px;
+    height: 123px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    margin-left:130px ;
+    margin-bottom: 18px;
+    }
+.header>button {
+    width: 227px;
+    height: 65px;
+    margin-left: 130px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+.howtext{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.howtext-left p{
+    font-size: 34px;
+    line-height: 48px;
+    margin-left: 130px;
+
+}
+.howtext-left  h2 {                   /*как выровнять эти два блока отноительно друг друга???*/
+    margin-left: 130px;
+    width: 554px;
+    height: 158px;
+    font-size: 50px;
+    line-height: 79px;
+    color: #01996D;
+
+}
+.howtext-right{
+    font-size: 30px;
+    line-height: 44px;
+    margin-left: 140px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cards {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 auto;
+    
+}
+
+.container2 { /* и тут  отступами этой карточки тоже хуйня наверн*/
+    margin: 300px 0 200px 0;
+
+}
+
+
+.number {  /* с наложнием текста на номер тоже нахуевертила кажись*/
+    width: 157px;
+    height: 225px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 225px;
+    text-align: center;
+    color: rgba(1, 153, 109, 0.2);  
+
+}
+.overnumber{
+    Width: 181px;
+    Height: 45px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+
+}
+.container_text {
+    width: 382px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #424242;
+    margin-bottom: 40px;
+}
+.container_img {
+    margin-bottom: 50px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.green{
+    Width:100%;
+    height: 100vh;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #245852;
+     
+}
+.kayla {
+    margin-left: 60px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.video-text p{
+    margin-left: 60px;
+    margin-bottom: 27px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+    color: #FFFFFF;
+
+}
+.video-text button {
+    margin-left: 60px;
+}
+.green img {
+    margin-right: 60px;
+}
